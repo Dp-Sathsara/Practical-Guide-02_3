@@ -28,12 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            txtLetter = new TextBox();
+            btnEnter = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(62, 78);
+            label1.Name = "label1";
+            label1.Size = new Size(60, 15);
+            label1.TabIndex = 0;
+            label1.Text = "The Letter";
+            // 
+            // txtLetter
+            // 
+            txtLetter.Location = new Point(159, 70);
+            txtLetter.Name = "txtLetter";
+            txtLetter.Size = new Size(100, 23);
+            txtLetter.TabIndex = 1;
+            // 
+            // btnEnter
+            // 
+            btnEnter.Location = new Point(62, 125);
+            btnEnter.Name = "btnEnter";
+            btnEnter.Size = new Size(75, 23);
+            btnEnter.TabIndex = 2;
+            btnEnter.Text = "Enter";
+            btnEnter.UseVisualStyleBackColor = true;
+            btnEnter.Click += btnEnter_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(372, 450);
+            Controls.Add(btnEnter);
+            Controls.Add(txtLetter);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox txtLetter;
+        private Button btnEnter;
     }
 }
